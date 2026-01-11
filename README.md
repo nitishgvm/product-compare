@@ -49,21 +49,10 @@ development, state management, accessibility, and user-centric design.
 
 ## 📂 Project Structure
 
-src/
-├── components/          # Reusable UI components
-│   ├── ProductCard.jsx  # Individual product display
-│   ├── ComparisonTable.jsx # Side-by-side comparison logic
-│   ├── SearchBar.jsx    # Filter input
-│   └── ThemeToggle.jsx  # Light/Dark mode switch
-├── data/               # Static data assets
-│   └── products.js      # Mock product data
-├── hooks/              # Custom React hooks
-│   └── useLocalStorage.js # Handle data persistence
-├── utils/              # Helper functions
-│   └── storage.js       # Storage utility wrappers
-├── App.jsx             # Main layout and routing
-├── index.jsx           # Entry point
-└── index.css           # Tailwind directives & global styles
+src/ ├── components/ \# Reusable UI components ├── data/ \# Static data
+assets ├── hooks/ \# Custom React hooks ├── styles/ \# Tailwind & global
+styles ├── types/ \# TypeScript interfaces ├── App.tsx \# Main
+application logic └── main.tsx \# Entry point
 
 ------------------------------------------------------------------------
 
@@ -71,24 +60,69 @@ src/
 
 ### Prerequisites
 
--   Node.js (v18+ recommended)
+-   Node.js v18 or above
 -   npm
+
+Verify installation:
+
+    node -v
+    npm -v
+
+------------------------------------------------------------------------
 
 ### Installation
 
-npm install
+Clone the repository:
 
-### Run Locally
+    git clone https://github.com/nitishgvm/product-compare.git
 
-npm run dev
+Navigate to the project directory:
 
-Application runs at http://localhost:5173
+    cd product-compare
+
+Install dependencies:
+
+    npm install
+
+------------------------------------------------------------------------
+
+### Run Locally (Development)
+
+Start the development server:
+
+    npm run dev
+
+The application will be available at:
+
+    http://localhost:5173
+
+------------------------------------------------------------------------
+
+### Production Build (Optional)
+
+Create an optimized production build:
+
+    npm run build
+
+Preview the production build locally:
+
+    npm run preview
+
+------------------------------------------------------------------------
+
+### Deployment
+
+The application is deployed on **Vercel**.
+
+To deploy your own version: 1. Push the code to GitHub 2. Import the
+repository into Vercel 3. Use the following settings: - Framework
+Preset: Vite - Build Command: npm run build - Output Directory: dist
 
 ------------------------------------------------------------------------
 
 ## 🧠 Assumptions
 
--   Static data only (no backend)
+-   Static data only (no backend/API)
 -   Maximum of 3 products can be compared
 -   Focus is on frontend architecture and UX
 
