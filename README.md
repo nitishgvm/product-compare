@@ -18,6 +18,12 @@ development, state management, accessibility, and user-centric design.
 
 ------------------------------------------------------------------------
 
+## 🚀 Live Demo
+
+👉 https://product-compare-pi.vercel.app/
+
+------------------------------------------------------------------------
+
 ## ✨ Features
 
 ### Core Features
